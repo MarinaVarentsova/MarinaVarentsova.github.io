@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto Mono', sans-serif;
+    color: rgb(11, 11, 11);
+}
+img{
+    max-width: 100%;
+}
+.centre{
+    padding-left: calc(50% - 580px);
+    padding-right: calc(50% - 580px);
+}
+
+.header{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background:rgb(168, 137, 137);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 22px;
+    padding-left: 20px;
+}
+
+.header__link{
+    color: rgb(11, 11, 11);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    text-decoration: none;
+}
+.top{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 22px;
+    padding-left: 20px;
+}
+.title{
+    width: 578px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 113px;
+    color: rgb(33, 34, 35);
+    mix-blend-mode: normal;
+}
+.about_work{
+    background: rgb(168, 137, 137);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+
+}
+.heading{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 80px;
+    color: rgb(33, 34, 35);
+    mix-blend-mode: normal;
+}
+.about_work__content{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+
+}
+.about_work1__content{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 570px);
+    gap: 14px;
+    justify-content: center;
+    margin-bottom: 20px;
+
+}
+.item {
+    text-align:  left;
+    padding-left: 0px;
+}
+.items1 {
+    text-align:  left;
+    padding-left: 20px;
+}
+.items2 {
+    text-align:  left;
+    padding-left: 20px;
+}
+
+.post ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: numList; 
+}
+   
+.post ul>li {
+    margin: 10px 30px;
+    position: relative; 
+    padding: 5px 0;
+    padding-left: 35px;
+    line-height:1.4;
+    
+}
+   
+.post ul > li::before { 
+    counter-increment: numList; 
+    content: counter(numList);
+    position: absolute; 
+    left: 0;
+    top: 3px;
+    width: 25px; 
+    height: 25px; 
+    line-height: 25px;
+    font-weight: bolder; 
+    font-size: 16px; 
+    font-family: Arial; 
+    text-align: center; 
+    color: rgb(33, 34, 35);  
+    background: rgb(168, 137, 137);
+    border-radius: 50%; 
+}
+.about_work1{
+    background: rgb(168, 137, 137);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+
+}
+.about_work2__content{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+
+}
+.about_work3__content{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 285px);
+    gap: 14px;
+    justify-content: center;
+    margin-bottom: 20px;
+    align-content: stretch;
+    align-items: center;
+    justify-items: start;
+
+}
+
+.item1 {
+    text-align:  left;
+    padding-left: 20px;
+}
+.items5, .items7, .items9 {
+    text-align:  left;
+    padding-left: 20px;
+}
+
+.items6{
+    grid-column: 2 / 5;   
+}
+.items8{
+    grid-column: 2 / 5;   
+}
+.items10{
+    grid-column: 2 / 5;   
+}
+.about_work2{
+    background: rgb(168, 137, 137);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+
+}
+.about_work4__content{
+    padding-top: 20px;
+    padding-bottom: 60px;
+    padding-left: 20px;
+
+}
+
+@media (max-width: 1024) {
+    .centre{
+        padding-left: calc(50% - 360px);
+        padding-right: calc(50% - 360px);
+    }
+    .about_work{
+        justify-content: center;
+        gap: 32px;
+    }
+    
+}
+@media (max-width: 767) {
+    .centre{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .title{
+        font-size: 48px;
+        line-height: 56px;
+    }
+   
+}
