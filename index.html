@@ -128,6 +128,38 @@ ymab('metrika.97177085', 'init'/*, {clientFeatures}, {callback}*/);
     </div>
 
     <a class="header__link" href="#top">Наверх</a>
+     <!-- Добавление бота справа -->
+    <div id="bot-container" style="position: fixed; bottom: 20px; right: 20px;">
+        <button id="start-bot"
+            style="padding: 10px 20px; background-color: #007bff; color: #fff; border: none; border-radius: 5px;">Начать
+            чат</button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('start-bot').addEventListener('click', function () {
+                fetch('https://hook.eu2.make.com/7hzlmj8mr9w1tkjq8pumrg7myo8k3bjk', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        event: 'start_chat',
+                        userId: 'example_user_123',
+                        message: 'Пользователь хочет начать чат'
+                    })
+                })
+                    .then(response => response.json())
+                    .then(data => {
+                        console.log('Успешно отправлено:', data);
+                        // Здесь можно добавить код для отображения чата пользователю
+                    })
+                    .catch((error) => {
+                        console.error('Ошибка:', error);
+                    });
+            });
+        });
+    </script>
 </body>
 
 </html>
